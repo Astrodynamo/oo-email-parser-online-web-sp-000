@@ -7,7 +7,7 @@ class EmailParser
   attr_accessor :emails
   
   def parse
-    @emails.split(/", "|" "/).each {|email|  }
+    @emails.split(/", "|" "/).uniq!
   end
   
 end
