@@ -5,8 +5,17 @@
 
 class EmailParser
   attr_accessor 
+  @all = []
   
-  def initialize (emails_list)
+  def initialize (emails)
+    
+  end
+  
+  def self.all
+    @all
+  end
+  
+  def parse
     
   end
   
