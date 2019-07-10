@@ -10,7 +10,7 @@ class EmailParser
   def initialize (emails)
     @emails = emails
   end
-  
+  binding.pry
   def parse
     return @emails.split(/", "|" "/).uniq!
   end
