@@ -5,18 +5,13 @@
 
 class EmailParser
   attr_accessor 
-  @all = []
   
   def initialize (emails)
-    
-  end
-  
-  def self.all
-    @all
+    @emails = emails
   end
   
   def parse
-    
+    @emails.split(", ")
   end
   
 end
